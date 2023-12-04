@@ -17,10 +17,14 @@ worksheet = workbook.active
 # # Get the cell value using the absolute reference
 # cell_value = worksheet[absolute_reference].value
 
-cell_value = worksheet['C16'].value
+A16_cell_value = worksheet['A16'].value
+C16_cell_value = worksheet['C16'].value
+D16_cell_value = worksheet['D16'].value
 
 # Print the cell value
-print("Value of cell A16:", cell_value)
+print("Value of cell A16:", A16_cell_value)
+print("Value of cell A16:", C16_cell_value)
+print("Value of cell A16:", D16_cell_value)
 
 # Close the Excel file
 workbook.close()
