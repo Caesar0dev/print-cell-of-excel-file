@@ -1,7 +1,7 @@
 import openpyxl
 
 # Load the Excel file
-excel_file = "home-hill_R7andR8_20231128.xlsx"  # Replace with the path to your Excel file
+excel_file = "E:/workspace/scraping/print-cell-of-excel-file/home-hill_R7andR8_20231128.xlsx"  # Replace with the path to your Excel file
 workbook = openpyxl.load_workbook(excel_file, data_only=True)
 # Select the desired worksheet (assuming it's the first sheet)
 worksheet = workbook.active
@@ -23,8 +23,8 @@ D16_cell_value = worksheet['D16'].value
 
 # Print the cell value
 print("Value of cell A16:", A16_cell_value)
-print("Value of cell A16:", C16_cell_value)
-print("Value of cell A16:", D16_cell_value)
+print("Value of cell C16:", C16_cell_value)
+print("Value of cell D16:", D16_cell_value)
 
 # Close the Excel file
 workbook.close()
